@@ -1,9 +1,8 @@
 # Blind SQL Injection Automation Tool
 
-Este es un script en Python diseñado para automatizar una inyección SQL a ciegas utilizando una cookie de sesión vulnerable. La herramienta permite realizar pruebas de seguridad en aplicaciones web para identificar y explotar vulnerabilidades SQLi.
+This is a Python script designed to automate blind SQL injection using a vulnerable session cookie. The tool enables security testing on web applications to identify and exploit SQLi vulnerabilities.
 
 ## 🚀 Características
-
-- Realiza inyecciones SQL a ciegas basadas en cookies de sesión.
-- Compatible con métodos de booleanos para extracción de datos.
+- Performs blind SQL injections based on session cookies.
+- Compatible with boolean-based methods for data extraction.
 
